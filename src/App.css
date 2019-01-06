@@ -41,20 +41,14 @@ body {
   margin: 0;
 }
 
-.user-list .user {
-  padding: 15px;
-  display: flex;
-  margin-top: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
-.user-list .user .profile-pic img {
-  width: 100px;
+img.card-img-top {
+  max-width: 150px;
   height: auto;
-  max-width: 100px;
+  margin: 15px auto;
 }
-.user .user-info {
-  flex: 4;
-  padding: 0 15px;  
+
+.card-body {
+  text-align: center;
 }
 
 :root {
@@ -104,4 +98,18 @@ body {
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777;
+}
+
+.cofirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.cofirm-modal .modal-content {
+  margin: 15vh auto;
+  max-width: calc(100vw - 150px);
 }

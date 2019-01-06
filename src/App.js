@@ -15,7 +15,7 @@ class App extends Component {
     const state = store.getState();
     return (
       <Provider store={store}>
-        <Header title={state.app.title}/>
+        <Header title={state.app.title} />
         <Router>
           <div>
             <Route exact path="/" component={UsersListContainer} />
@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/employee/update/:id" component={UserFormContainer} />
           </div>
         </Router>
-        <Footer footer={state.app.footer}/>
+        <Footer footer={state.app.footer} />
       </Provider>
     );
   }

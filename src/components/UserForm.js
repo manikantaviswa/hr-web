@@ -83,10 +83,10 @@ export default class UserForm extends React.Component {
                 </div>
                 <div className="form-label-group">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-sm-3 col-6">
                             <Link className="btn btn-block btn-secondary" to="/">Cancel</Link>
                         </div>
-                        <div className="col-9">
+                        <div className="col-sm-9 col-6">
                             <button className="btn btn-block btn-success" type="submit" onClick={(e) => this.onSave(e)}>Save</button>
                         </div>
                     </div>

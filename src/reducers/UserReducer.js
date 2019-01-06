@@ -58,7 +58,7 @@ const UserReducer = (store = defaultStore, action) => {
         case 'DELETE_USER_SUCCESS':
             const { users } = store;
             const index = users.findIndex((user) => {
-                return user.id === action.id
+                return user._id === action.id
             });
             users.splice(index, 1);
             return ({
